@@ -21,9 +21,6 @@ class Truck extends Vehicle implements AbleToTow {
   towingCapacity: number;
 
   // TODONE: Create a constructor that accepts the properties of the Truck class
-    // TODONE: The constructor should call the constructor of the parent class, Vehicle
-    // TODONE: The constructor should initialize the properties of the Truck class
-    // TODONE: The constructor should check if the wheels array has 4 elements and create 4 new default Wheel objects if it does not
   constructor(
     vin: string,
     color: string,
@@ -35,7 +32,9 @@ class Truck extends Vehicle implements AbleToTow {
     wheels: Wheel[],
     towingCapacity: number
   ) {
+    // TODONE: The constructor should call the constructor of the parent class, Vehicle
     super();
+    // TODONE: The constructor should initialize the properties of the Truck class
     this.vin = vin;
     this.color = color;
     this.make = make;
@@ -43,6 +42,7 @@ class Truck extends Vehicle implements AbleToTow {
     this.year = year;
     this.weight = weight;
     this.topSpeed = topSpeed;
+    // TODONE: The constructor should check if the wheels array has 4 elements and create 4 new default Wheel objects if it does not
     if (wheels.length !== 4) {
       this.wheels = [new Wheel(), new Wheel(), new Wheel(), new Wheel()];
     } else {

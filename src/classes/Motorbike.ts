@@ -17,9 +17,6 @@ class Motorbike extends Vehicle {
   wheels: Wheel[];
 
   // TODONE: Create a constructor that accepts the properties of the Motorbike class
-    // TODONE: The constructor should call the constructor of the parent class, Vehicle
-    // TODONE: The constructor should initialize the properties of the Motorbike class
-    // TODONE: The constructor should check if the wheels array has 2 elements and create 2 new default Wheel objects if it does not
   constructor(
     vin: string,
     color: string,
@@ -30,7 +27,9 @@ class Motorbike extends Vehicle {
     topSpeed: number,
     wheels: Wheel[]
   ) {
+    // TODONE: The constructor should call the constructor of the parent class, Vehicle
     super();
+    // TODONE: The constructor should initialize the properties of the Motorbike class
     this.vin = vin;
     this.color = color;
     this.make = make;
@@ -38,6 +37,7 @@ class Motorbike extends Vehicle {
     this.year = year;
     this.weight = weight;
     this.topSpeed = topSpeed;
+    // TODONE: The constructor should check if the wheels array has 2 elements and create 2 new default Wheel objects if it does not
     if (wheels.length !== 2) {
       this.wheels = [new Wheel(), new Wheel()];
     } else {
@@ -46,17 +46,17 @@ class Motorbike extends Vehicle {
   }
 
   // TODONE: Implement the wheelie method
-    // TODONE: The method should log the message "Motorbike [make] [model] is doing a wheelie!"
   wheelie(): void {
+    // TODONE: The method should log the message "Motorbike [make] [model] is doing a wheelie!"
     console.log(`Motorbike ${this.make} ${this.model} is doing a wheelie!`);
   }
 
   // TODONE: Override the printDetails method from the Vehicle class
+  override printDetails(): void {
     // TODONE: The method should call the printDetails method of the parent class
+    super.printDetails();
     // TODONE: The method should log the details of the Motorbike
     // TODONE: The details should include the VIN, make, model, year, weight, top speed, color, and wheels
-  override printDetails(): void {
-    super.printDetails();
     console.log(`VIN: ${this.vin}`);
     console.log(`Make: ${this.make}`);
     console.log(`Model: ${this.model}`);
