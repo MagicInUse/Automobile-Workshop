@@ -1,7 +1,7 @@
-# Project Title
-Automobile Workshop
+# Automobile Workshop
+Code Challenge 08
 
-# Description
+## Description
 
 A fun NodeJS CLI app for creating and modifying vehicles in a shop. Then take them out for a spin!
 Part of Challenge 08 in our Bootcamp.
