@@ -402,6 +402,11 @@ class Cli {
                 this.findVehicleToTow(this.vehicles[i] as Truck);
                 return;
               }
+              else {
+                // log that the vehicle cannot tow if it is not a truck
+                // I did not like that it did not show the user anything if it was not a truck
+                console.log(`${this.vehicles[i].make} ${this.vehicles[i].model} cannot tow another vehicle.`);
+              }
             }
           }
         }
@@ -411,6 +416,11 @@ class Cli {
             if (this.vehicles[i].vin === this.selectedVehicleVin) {
               if (this.vehicles[i] instanceof Motorbike) {
                 (this.vehicles[i] as Motorbike).wheelie();
+              }
+              else {
+                // log that the vehicle cannot perform a wheelie if it is not a motorbike
+                // I did not like that it did not show the user anything if it was not a motorbike
+                console.log(`${this.vehicles[i].make} ${this.vehicles[i].model} cannot perform a wheelie.`);
               }
             }
           }
