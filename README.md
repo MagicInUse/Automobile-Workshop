@@ -35,7 +35,6 @@ Part of Challenge 08 in our Bootcamp.
     ```sh
     npm start
     ```
-2. Open your browser and navigate to `http://localhost:3000`.
 
 ## Features
 
