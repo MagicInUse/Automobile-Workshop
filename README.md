@@ -35,6 +35,9 @@ Part of Challenge 08 in our Bootcamp.
     ```sh
     npm start
     ```
+## Example Usage Video
+
+[https://youtu.be/RUHR4dFz3mg](https://youtu.be/RUHR4dFz3mg)
 
 ## Features
 
